@@ -7,4 +7,6 @@ local function cmd(command)
   return table.concat({ "<Cmd>", command, "<CR>" })
 end
 
-vim.keymap.set("n", "<LEFT>", cmd("WindowsMaximizeVertically"))
+vim.keymap.set("n", "<leader>pp", cmd("TmuxNavigateLeft"))
+vim.keymap.set("n", "<leader>tt", cmd("terminal"))
+vim.api.nvim_set_keymap("t", "<C-space>", "<C-\\><C-n>:CFloatTerm<CR>", { noremap = true, silent = true })

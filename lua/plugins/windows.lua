@@ -1,4 +1,3 @@
-local class = require("middleclass")
 return {
   "anuvyklack/windows.nvim",
   requires = {
