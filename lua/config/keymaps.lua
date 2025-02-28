@@ -8,5 +8,6 @@ local function cmd(command)
 end
 
 vim.keymap.set("n", "<leader>pp", cmd("TmuxNavigateLeft"))
-vim.keymap.set("n", "<leader>tt", cmd("terminal"))
+vim.keymap.set("n", "<leader>wt", ":split | terminal<CR>", { silent = true })
+
 vim.api.nvim_set_keymap("t", "<C-space>", "<C-\\><C-n>:CFloatTerm<CR>", { noremap = true, silent = true })
